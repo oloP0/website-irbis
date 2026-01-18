@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz IRBIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="pictrues/logo_zsi1.png" alt="Logo ZSI">
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="poradnik.html">Poradnik</a>
+            <a href="gatnuki.html">Gatunki</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="quiz-container">
+
+        <h1 class="quiz-title">Quiz IRBIS — Sprawdź swoją wiedzę o gadach</h1>
+
+        <div class="quiz-box" id="start-box">
+            <h2>Wybierz kategorię pytań:</h2>
+            <select id="category-select">
+            <option value="all">Wszystkie gady</option>
+            <option value="wez">Węże</option>
+            <option value="jaszczurki">Jaszczurki</option>
+            <option value="zolwie">Żółwie</option>
+            <option value="krokodyle">Krokodyle</option>
+        </select>
+            <button class="start-btn" id="start-btn">Rozpocznij quiz</button>
+        </div>
+
+        <div class="quiz-box hidden" id="quiz-box">
+            <h2 id="question-text"></h2>
+            <div id="answers"></div>
+            <button id="next-btn" class="next-btn hidden">Następne pytanie</button>
+        </div>
+
+        <div class="quiz-box hidden" id="end-box">
+            <h2>Twój wynik:</h2>
+            <p id="score"></p>
+            <button id="restart-btn">Zagraj ponownie</button>
+        </div>
+
+    </section>
+
+    <!-- Tutaj podłączamy JS -->
+    <script src="quiz.js"></script>
+</body>
+
+</html>
